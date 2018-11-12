@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sinabro</string>
+    <string name="title_translation">번역</string>
+    <string name="title_dictionary">사전</string>
+    <string name="title_feedback">피드백</string>
+    <string name="text_south">남한</string>
+    <string name="text_north">북한</string>
+</resources>
