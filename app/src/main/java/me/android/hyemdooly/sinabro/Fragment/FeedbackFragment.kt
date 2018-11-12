@@ -18,13 +18,13 @@ private const val ARG_PARAM2 = "param2"
 /**
  * A simple [Fragment] subclass.
  * Activities that contain this fragment must implement the
- * [TranslationFragment.OnFragmentInteractionListener] interface
+ * [FeedbackFragment.OnFragmentInteractionListener] interface
  * to handle interaction events.
- * Use the [TranslationFragment.newInstance] factory method to
+ * Use the [FeedbackFragment.newInstance] factory method to
  * create an instance of this fragment.
  *
  */
-class TranslationFragment : androidx.fragment.app.Fragment() {
+class FeedbackFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -43,7 +43,7 @@ class TranslationFragment : androidx.fragment.app.Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_translation, container, false)
+        return inflater.inflate(R.layout.fragment_feedback, container, false)
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -88,12 +88,12 @@ class TranslationFragment : androidx.fragment.app.Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment TranslationFragment.
+         * @return A new instance of fragment FeedbackFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            TranslationFragment().apply {
+            FeedbackFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

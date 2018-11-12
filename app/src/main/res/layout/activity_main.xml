@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -9,7 +9,7 @@
         android:background="@android:color/white"
         tools:context=".Activity.MainActivity">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/layout_translation_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
                 app:layout_constraintLeft_toLeftOf="@id/btn_swap"
         />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
     
     <View
             android:layout_width="match_parent"
@@ -65,7 +65,7 @@
             android:background="#c0c0c0"
     />
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/layout_input_box"
             app:layout_constraintTop_toBottomOf="@id/layout_translation_bar"
             android:layout_marginTop="1dp"
@@ -84,7 +84,7 @@
                 android:textColor="@android:color/black"
         />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <View
             android:layout_width="match_parent"
@@ -94,7 +94,7 @@
     />
 
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/layout_output_box"
             app:layout_constraintTop_toBottomOf="@id/layout_input_box"
             android:layout_marginTop="1dp"
@@ -111,7 +111,7 @@
                 android:textColor="@android:color/black"
         />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
@@ -120,7 +120,7 @@
 
 
 
-    <android.support.design.widget.BottomNavigationView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/navigation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -132,4 +132,4 @@
             app:layout_constraintRight_toRightOf="parent"
             app:menu="@menu/navigation"/>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
