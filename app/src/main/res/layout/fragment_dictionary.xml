@@ -12,7 +12,7 @@
             android:layout_height="wrap_content"
             android:padding="15dp">
         <EditText
-
+                android:id="@+id/edit_text_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
@@ -22,6 +22,7 @@
                 android:background="@android:color/transparent"
                 android:textColor="@android:color/black"
                 android:inputType="text"
+                android:imeOptions="actionSearch"
         />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -41,6 +42,7 @@
             android:layout_height="wrap_content"
             android:padding="15dp">
         <TextView
+                android:id="@+id/text_description_output"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"

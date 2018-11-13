@@ -15,11 +15,11 @@ import me.android.hyemdooly.sinabro.Fragment.TranslationFragment
 import me.android.hyemdooly.sinabro.R
 import android.widget.Toast
 import androidx.viewpager.widget.ViewPager
+import com.google.firebase.FirebaseApp
 
 
 class MainActivity : AppCompatActivity(), TranslationFragment.OnFragmentInteractionListener, DictionaryFragment.OnFragmentInteractionListener, FeedbackFragment.OnFragmentInteractionListener {
 
-    private var translationState = true // nam -> book : true, book -> nam : false
     private var backKeyPressedTime: Long = 0
     private var prevMenuItem :MenuItem ?= null
 
@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity(), TranslationFragment.OnFragmentInteract
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        FirebaseApp.initializeApp(this)
         val pagerAdapter = NaviPagerAdapter(supportFragmentManager)
         view_pager_navi.adapter = pagerAdapter
 
