@@ -79,6 +79,7 @@
                 android:maxLines="1"
                 android:background="@android:color/transparent"
                 android:textColor="@android:color/black"
+                android:inputType="text"
         />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
