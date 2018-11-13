@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 android:textSize="20sp"
-                android:text="asdfasdfasdfasdfasdfasdf"
+                android:text=""
                 android:background="@android:color/transparent"
                 android:textColor="@android:color/black"
         />

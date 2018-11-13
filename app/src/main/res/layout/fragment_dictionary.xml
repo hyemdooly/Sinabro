@@ -6,9 +6,49 @@
                                                    xmlns:app="http://schemas.android.com/apk/res-auto"
                                                    tools:context=".Fragment.DictionaryFragment">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_input_box"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+        <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textSize="16sp"
+                android:hint="@string/edit_text_dictionary_hint"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"
+            app:layout_constraintTop_toBottomOf="@id/layout_input_box"
+    />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_output_box"
+            app:layout_constraintTop_toBottomOf="@id/layout_input_box"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textSize="20sp"
+                android:text=""
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
