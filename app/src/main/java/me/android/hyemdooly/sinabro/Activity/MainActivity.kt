@@ -2,10 +2,8 @@ package me.android.hyemdooly.sinabro.Activity
 
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewpager.widget.PagerAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import me.android.hyemdooly.sinabro.Adapter.NaviPagerAdapter
