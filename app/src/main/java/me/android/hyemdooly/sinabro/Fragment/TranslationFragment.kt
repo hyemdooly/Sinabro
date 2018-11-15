@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.fragment_translation.*
@@ -48,6 +49,9 @@ class TranslationFragment : androidx.fragment.app.Fragment() {
             when(actionId){
                 EditorInfo.IME_ACTION_SEARCH -> {
                     if(view.edit_text_input.text.toString() != "") {
+                        val inputMethodManager: InputMethodManager = context!!.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                        inputMethodManager.hideSoftInputFromWindow(view.edit_text_input.windowToken, 0)
+
                         var docRef = db.collection(collectionPath).document(view.edit_text_input.text.toString().replace(" ", ""))
                         docRef.get().addOnCompleteListener {
                             var reverse :String
@@ -59,7 +63,7 @@ class TranslationFragment : androidx.fragment.app.Fragment() {
                                     "null"
                                 }
                             } else {
-                                Toast.makeText(context, "오류가 발생했습니다.", Toast.LENGTH_LONG)
+                                Toast.makeText(context, "오류가 발생했습니다.", Toast.LENGTH_LONG).show()
                                 reverse = "ERROR"
                             }
                             view.text_output.text = when (reverse) {
@@ -68,12 +72,16 @@ class TranslationFragment : androidx.fragment.app.Fragment() {
                                 else -> reverse
                             }
                         }
+
                         true
                     } else false
                 }
                 else -> false
             }
         }
+
+
+
 
     }
 

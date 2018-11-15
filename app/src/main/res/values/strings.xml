@@ -5,9 +5,9 @@
     <string name="title_feedback">피드백</string>
     <string name="text_south">남한</string>
     <string name="text_north">북한</string>
-    <string name="text_intro">함께 만들어가는 시나브로</string>
+    <string name="text_intro">함께 만들어나가는 시나브로</string>
     <string name="edit_text_translation_hint">번역하고 싶은 단어를 입력하세요!</string>
     <string name="edit_text_dictionary_hint">뜻을 알고 싶은 문화어를 입력하세요!</string>
-    <string name="text_feed_description">여러분과 함께 만들어나가는 시나브로!\n개발자에게 피드백을 보내주세요!</string>
+    <string name="text_feed_description">여러분과 함께 만들어나가는 시나브로!\n수정이나 추가가 필요한 단어가 있나요?\n개발자에게 피드백을 보내주세요!</string>
     <string name="btn_text_email">보내기</string>
 </resources>

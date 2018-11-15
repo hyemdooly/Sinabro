@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
@@ -37,6 +38,9 @@ class DictionaryFragment : Fragment() {
             when(actionId){
                 EditorInfo.IME_ACTION_SEARCH -> {
                     if(view.edit_text_input.text.toString() != "") {
+                        val inputMethodManager: InputMethodManager = context!!.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                        inputMethodManager.hideSoftInputFromWindow(view.edit_text_input.windowToken, 0)
+
                         var docRef = db.collection("north_word_dict").document(view.edit_text_input.text.toString().replace(" ", ""))
                         docRef.get().addOnCompleteListener {
                             var description :String
@@ -48,7 +52,7 @@ class DictionaryFragment : Fragment() {
                                     "null"
                                 }
                             } else {
-                                Toast.makeText(context, "오류가 발생했습니다.", Toast.LENGTH_LONG)
+                                Toast.makeText(context, "오류가 발생했습니다.", Toast.LENGTH_LONG).show()
                                 description = "ERROR"
                             }
                             view.text_description_output.text = when (description) {
@@ -64,12 +68,8 @@ class DictionaryFragment : Fragment() {
             }
         }
 
-    }
 
-    fun getDescriptionFromDoc(documentPath: String) :String {
-        var returnVal = "asdf"
 
-        return returnVal
     }
 
     override fun onAttach(context: Context) {
