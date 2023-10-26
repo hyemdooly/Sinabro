@@ -12,7 +12,9 @@
 Android, Kotlin, Python, Gson, Firebase-Cloud Firestore
 
 ## 앱 스크린샷
-<img src="https://github.com/hyemdooly/Sinabro/assets/15646373/2fa06e05-ff6f-4f7d-8e5e-a2d5e5248983" width="200"/> <img src="https://github.com/hyemdooly/Sinabro/assets/15646373/fd760e6c-0162-4092-a25e-10885e61b7bf" width="200"/> <img src="https://github.com/hyemdooly/Sinabro/assets/15646373/bd17dbe6-4795-4e39-abba-11c87e3015d1" width="200"/> <img src="https://github.com/hyemdooly/Sinabro/assets/15646373/30b24446-43c8-4a5d-855e-8e3ce4723afe" width="200"/>
+<img src="https://github.com/hyemdooly/Sinabro/assets/15646373/2fa06e05-ff6f-4f7d-8e5e-a2d5e5248983" width="200"/> <img src="https://github.com/hyemdooly/Sinabro/assets/15646373/fd760e6c-0162-4092-a25e-10885e61b7bf" width="200"/> 
+
+<img src="https://github.com/hyemdooly/Sinabro/assets/15646373/bd17dbe6-4795-4e39-abba-11c87e3015d1" width="200"/> <img src="https://github.com/hyemdooly/Sinabro/assets/15646373/30b24446-43c8-4a5d-855e-8e3ce4723afe" width="200"/>
 
 ## 개발 내용
 ### CSV 크롤링
